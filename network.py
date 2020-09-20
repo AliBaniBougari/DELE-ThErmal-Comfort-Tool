@@ -1,7 +1,6 @@
 import numpy as np
 from sklearn.model_selection import train_test_split
 from keras.models import *
-#import  tensorflow as tf
 from keras.layers import Dense,Dropout,LSTM
 from keras.layers.normalization import BatchNormalization
 import matplotlib.pyplot as plt
@@ -118,11 +117,3 @@ history = model.fit(X_train, y_train,verbose = 1 ,shuffle=True, epochs=250, batc
 test_net(X_test,y_test)
 
 plot_history(history)
-
-#print(model.predict(X_test)[:2])
-#print(y_test[:2])
-
-
-#save model
-#model.save('last_train_1024.hdf5')
-
